@@ -105,6 +105,19 @@ with open(model_path, 'rb') as file:
 st.set_page_config(layout="wide")
 st.sidebar.title("Filter Pane")
 
+
+# Set the background color
+background_color = """
+<style>
+body {
+    background-color: #141313;  /* Set your desired background color here */
+}
+</style>
+"""
+
+# Apply the background color
+st.markdown(background_color, unsafe_allow_html=True)
+
 # --------------- PAGE TITLE ------------------------
 # creates the container for page title
 dash_1 = st.container()
